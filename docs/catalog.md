@@ -45,7 +45,7 @@
   "author": "Имя или команда",
   "description": "Одно-два предложения на любом языке — переводить не будем.",
   "repository": "https://github.com/example/weather-fastplugin",
-  "url": "https://github.com/example/weather-fastplugin/releases/latest/download/weather.fastplugin.zip",
+  "url": "https://github.com/example/weather-fastplugin/releases/download/v1.0.0/weather.fastplugin.zip",
   "sha256": "<хеш архива>",
   "version": "1.0.0",
   "apiVersion": 1,
@@ -53,6 +53,10 @@
   "hosts": ["api.example.com"]
 }
 ```
+
+Ссылка должна вести на конкретный релиз (`/releases/download/v1.0.0/…`), а не на
+`latest`: хеш в индексе фиксирует именно эту версию, и плавающая ссылка перестанет
+ему соответствовать при следующем вашем релизе.
 
 Что смотрим на ревью: понятный незапутанный код, каждое разрешение объяснимо
 задачей плагина, хосты совпадают с заявленными, хеш совпадает с архивом.
