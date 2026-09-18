@@ -20,7 +20,7 @@
 
 <p align="center"><b>English</b> · <a href="README.ru.md">Русский</a></p>
 
-![The FastAction panel under the notch, playing music](docs/screenshots/en/music.png)
+![The FastAction panel under the notch, playing music](docs/screenshots/en/panel-top.png)
 
 ## Features
 
@@ -33,7 +33,7 @@
 
 ### The panel, your way
 
-![Tabs on top, the panel as tall as its content](docs/screenshots/en/panel-top.png)
+![Tabs down the side](docs/screenshots/en/panel-left.png)
 
 - **Tabs on the left or on top.** A row of tabs can sit on the left, centred or on the right.
 - **Three panel sizes** — small, medium and large; the size sets the width, the height and the icons at once.
@@ -42,6 +42,8 @@
   The rest keep the size you picked, so the window never moves out from under the pointer.
 
 ### Now Playing
+
+![The player in the panel](docs/screenshots/en/music.png)
 
 Control whatever is playing: Music, Spotify, a browser or any other player that reports to macOS.
 Play, pause, skip and scrub through the track; click the app name to jump to the player.
