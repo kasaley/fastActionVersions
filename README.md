@@ -6,7 +6,8 @@
 
 <p align="center">
   Your MacBook notch, turned into a quick-action panel.<br>
-  Music, screenshots, clipboard, downloads, Pin and a translator — one hover away.
+  Music, screenshots, clipboard, downloads, Pin and a translator — one hover away.<br>
+  Tabs, sizes, alerts and plugins — all of it yours to arrange.
 </p>
 
 <p align="center">
@@ -30,6 +31,16 @@
 - It stays pinned to the notch while you swipe between desktops and never pops up in Mission Control.
 - While music plays, the album art and a small equalizer sit right next to the closed notch.
 
+### The panel, your way
+
+![Tabs on top, the panel as tall as its content](docs/screenshots/en/panel-top.png)
+
+- **Tabs on the left or on top.** A row of tabs can sit on the left, centred or on the right.
+- **Three panel sizes** — small, medium and large; the size sets the width, the height and the icons at once.
+- **Icon size** has a slider of its own, for tabs larger or smaller than the size implies.
+- Tabs with nothing to scroll — the player, the shelf in a row — shrink the panel to their own height.
+  The rest keep the size you picked, so the window never moves out from under the pointer.
+
 ### Now Playing
 
 Control whatever is playing: Music, Spotify, a browser or any other player that reports to macOS.
@@ -42,6 +53,9 @@ Play, pause, skip and scrub through the track; click the app name to jump to the
 - Screenshots (<kbd>⌘⇧3</kbd>, <kbd>⌘⇧4</kbd>) and screen recordings (<kbd>⌘⇧5</kbd>) land in Shots instead of on your desktop.
 - Search by name, date or **the text inside a screenshot** — recognized on your Mac.
 - Drag a screenshot straight into any app; hover and click ✕ to move it to the Trash.
+- **A row or a grid** — your choice, and the grid takes from 2 to 6 columns.
+
+![Screenshots in a grid](docs/screenshots/en/shelf-grid.png)
 
 ### Clipboard history
 
@@ -57,7 +71,13 @@ Play, pause, skip and scrub through the track; click the app name to jump to the
 ![Pin and frequently copied items](docs/screenshots/en/snippets.png)
 
 Keep the texts you paste all the time — your email, phone number, links — one click away.
-What you copy most often appears here on its own, and you can pin it. Email, links, IP addresses, postal addresses, bank cards and crypto wallets are recognised on their own, and the list can be filtered by type.
+What you copy most often appears here on its own, and you can pin it.
+
+- **The type is worked out on its own**: email, link, IP address, postal address, bank card,
+  crypto wallet (BTC, ETH, TRON, LTC, SOL), phone number, handle. All of it locally, from the text itself.
+- The strip of types above the list narrows it down — to wallets only, say.
+- A card is recognised by its checksum, so a long order number never becomes one, and the number
+  is covered in the list: `4012 •••• •••• 1881`. Copying still gives you all of it.
 
 ### Recent downloads
 
@@ -133,7 +153,8 @@ default — the tab still keeps its dot, so nothing is lost.
 ![Translator](docs/screenshots/en/translate.png)
 
 The language is detected as you type. Translation runs entirely on your Mac through Apple Translation:
-no internet connection and no API keys.
+no internet connection and no API keys. If a language pack is missing, **Download languages** takes
+you to **Settings → Translate**, where it is downloaded and you can see how it went.
 
 ### Keyboard shortcuts
 
@@ -143,14 +164,66 @@ While the panel is open, <kbd>⌘1</kbd>…<kbd>⌘9</kbd> switch tabs — hold 
 The panel's shortcuts take priority over the app underneath, and when it's closed they work in your apps as usual.
 Any tab can get its own shortcut.
 
-### Make it yours
+## Nearly everything is a setting
 
-- Reorder tabs, hide the ones you don't need, and choose which panel elements to show.
+Every tab, every alert and every plugin permission is yours to decide.
+Four of the ten settings pages:
+
+### Panel
+
+![Panel settings](docs/screenshots/en/settings-panel.png)
+
+Tabs on the left or on top and where the row sits, three window sizes, a slider of its own for the icons.
+Below that, the tabs themselves: drag to reorder, switch off the ones you never open, and give any of
+them a shortcut of your own instead of <kbd>⌘1</kbd>…<kbd>⌘9</kbd>.
+
+### Notifications
+
+![Notification settings](docs/screenshots/en/settings-notifications.png)
+
+How long a banner stays, which sound it makes, how firmly the trackpad taps — and one switch for the
+days you want none of it. Focus is respected by default, and the page tells you whether it is on
+right now.
+
+### Clipboard
+
+![Clipboard settings](docs/screenshots/en/settings-clipboard.png)
+
+Automatic clearing — daily, weekly or monthly, on the day and hour you pick, with the next run spelled out.
+And a list of apps whose copies never reach the history: your bank, your password manager, a work chat.
+
+### Plugins
+
+![Plugin settings](docs/screenshots/en/settings-plugins.png)
+
+The catalogue, installing and removing, automatic updates — and each plugin's permissions, one by one.
+What a plugin asks for is visible before you install it, a permission can be taken back at any moment,
+and the plugin's log shows every call it makes to the system.
+
+### And also
+
 - Open the panel on hover or on click, with an optional delay.
 - Five interface languages, switched instantly.
-- Plugins are switched on and off one by one, together with their permissions.
-- Trackpad feedback, the alert sound and how long a banner stays are yours to set — or turn alerts off.
+- Which parts of the panel to show: the tab caption, the gear, the activity next to the closed notch.
 - Open at login and automatic updates.
+
+## How people use it
+
+- **A call in a minute.** The notch opens with a reminder and a **Join** button that starts Zoom
+  or Meet — no digging through email for the link.
+- **A screenshot into a chat.** <kbd>⌘⇧4</kbd>, and the capture is already in Shots, ready to be
+  dragged straight into the conversation. The desktop stays clean.
+- **Details at hand.** Email, phone, delivery address and card number live in Pin, labelled by type:
+  pick the type, click, and it is pasted.
+- **“Where did I see that link?”** Search the clipboard history and it turns up in a couple of
+  letters, even if you copied it the day before yesterday.
+- **Issues between other things.** The “Waiting for my review” filter in Jira, the description and
+  comments right in the panel, and the issue key copied with one click — for the branch name.
+- **A password without switching windows.** 1Password opens with Touch ID, and Autofill types the
+  login and the password into the active app.
+- **A letter in a language you do not read.** The translator works on the device: no internet, no keys.
+- **A file you just downloaded.** Downloads keeps it on top — open it, show it in Finder or drag it
+  onward without opening Finder at all.
 
 ## Plugins
 
@@ -217,4 +290,6 @@ Found a bug or have an idea? [Open an issue](https://github.com/kasaley/fastActi
 
 ## Coming next
 
-A plugin API and a plugin store, so anyone can add their own tabs to the notch.
+The plugin API and the catalogue are here already — [how to write one](docs/PLUGINS.md).
+Next: more ready-made integrations, settings that follow you between Macs, and notarization,
+so the first launch comes without a warning.
