@@ -6,7 +6,7 @@
 
 <p align="center">
   Your MacBook notch, turned into a quick-action panel.<br>
-  Music, screenshots, clipboard, downloads, snippets and a translator — one hover away.
+  Music, screenshots, clipboard, downloads, Pin and a translator — one hover away.
 </p>
 
 <p align="center">
@@ -35,11 +35,11 @@
 Control whatever is playing: Music, Spotify, a browser or any other player that reports to macOS.
 Play, pause, skip and scrub through the track; click the app name to jump to the player.
 
-### Screenshot shelf
+### Shots
 
-![Screenshot shelf](docs/screenshots/en/shelf.png)
+![Shots](docs/screenshots/en/shelf.png)
 
-- Screenshots (<kbd>⌘⇧3</kbd>, <kbd>⌘⇧4</kbd>) and screen recordings (<kbd>⌘⇧5</kbd>) land on the shelf instead of your desktop.
+- Screenshots (<kbd>⌘⇧3</kbd>, <kbd>⌘⇧4</kbd>) and screen recordings (<kbd>⌘⇧5</kbd>) land in Shots instead of on your desktop.
 - Search by name, date or **the text inside a screenshot** — recognized on your Mac.
 - Drag a screenshot straight into any app; hover and click ✕ to move it to the Trash.
 
@@ -52,12 +52,12 @@ Play, pause, skip and scrub through the track; click the app name to jump to the
 - History is cleared automatically: every day, week or month, at the time you choose.
 - Passwords from password managers are never saved.
 
-### Snippets and frequently copied
+### Pin and frequently copied
 
-![Snippets and frequently copied items](docs/screenshots/en/snippets.png)
+![Pin and frequently copied items](docs/screenshots/en/snippets.png)
 
 Keep the texts you paste all the time — your email, phone number, links — one click away.
-What you copy most often appears here on its own, and you can pin it as a snippet.
+What you copy most often appears here on its own, and you can pin it. Email, links, IP addresses, postal addresses, bank cards and crypto wallets are recognised on their own, and the list can be filtered by type.
 
 ### Recent downloads
 
@@ -183,10 +183,10 @@ Automatic checks and installs can be changed in **Settings → General → Updat
 
 ## Privacy
 
-- Your clipboard history, snippets and screenshots stay on your Mac. There are no accounts and no analytics;
+- Your clipboard history, pinned items and screenshots stay on your Mac. There are no accounts and no analytics;
   the only network request is the daily update check to GitHub.
 - Text recognition and translation run on-device.
-- Saving screenshots to the shelf changes the macOS screenshot folder; turning it off restores the previous one.
+- Saving screenshots to Shots changes the macOS screenshot folder; turning it off restores the previous one.
 - **Accessibility** access is optional and needed only for pasting a picked item right away.
 
 ## Requirements
@@ -209,7 +209,7 @@ FastAction never launches Mail on its own.
 **The translator asks to download languages.** Click **Download**, or add them in
 **System Settings → General → Language & Region → Translation Languages**.
 
-**Screenshots still go to the desktop.** Open the **Shelf** tab and click **Turn On**.
+**Screenshots still go to the desktop.** Open the **Shots** tab and click **Turn On**.
 
 ## Feedback
 
