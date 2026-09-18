@@ -156,7 +156,7 @@ Any tab can get its own shortcut.
 
 Plugins do not come with the app: you install the ones you need in **Settings → Plugins**.
 The full list — with the authors' own descriptions and links to their repositories — lives on a
-separate page: **[FastAction plugins](docs/plugins.md)**. Add yours there with a pull request.
+separate page: **[The plugin catalogue](docs/catalog.md)**. Add yours there with a pull request.
 Both integrations — Jira and 1Password — are written on the open plugin API and run in a sandbox:
 a plugin gets no files, no network beyond the hosts it declared, and no access to other plugins
 until you allow it. Permissions are granted one by one and revoked any time in
