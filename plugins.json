@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "plugins": [
+    {
+      "id": "com.fastaction.jira",
+      "name": "Jira",
+      "icon": "checklist",
+      "author": "FastAction",
+      "description": "Задачи Jira по вашим фильтрам: статус и приоритет в строке, описание и комментарии в панели, переход в браузер и копирование номера или ссылки.",
+      "repository": "https://github.com/kasaley/fastActionVersions",
+      "url": "https://github.com/kasaley/fastActionVersions/releases/latest/download/jira.fastplugin.zip",
+      "sha256": "3d903a1f50d40116d51779079e85d442f063e4200b7e18155a890ce8cb13f9d2",
+      "version": "1.0.0",
+      "apiVersion": 1,
+      "official": true,
+      "permissions": [
+        "network",
+        "secrets",
+        "clipboard",
+        "notifications",
+        "openURL"
+      ],
+      "hosts": [
+        "адрес вашей Jira"
+      ]
+    },
+    {
+      "id": "com.fastaction.onepassword",
+      "name": "1Password",
+      "icon": "key.fill",
+      "author": "FastAction",
+      "description": "Часто используемые записи 1Password через официальный op: поля с показом по требованию, копирование скрытых значений и автозаполнение.",
+      "repository": "https://github.com/kasaley/fastActionVersions",
+      "url": "https://github.com/kasaley/fastActionVersions/releases/latest/download/onepassword.fastplugin.zip",
+      "sha256": "41255563ffc6099be7ddde667a460994a13ba4c4af0e2291fde810fe3954d082",
+      "version": "1.0.0",
+      "apiVersion": 1,
+      "official": true,
+      "permissions": [
+        "clipboard",
+        "openURL",
+        "exec",
+        "autofill"
+      ],
+      "hosts": []
+    }
+  ]
+}

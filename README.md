@@ -6,7 +6,7 @@
 
 <p align="center">
   Your MacBook notch, turned into a quick-action panel.<br>
-  Music, screenshots, clipboard, snippets and a translator — one hover away.
+  Music, screenshots, clipboard, downloads, snippets and a translator — one hover away.
 </p>
 
 <p align="center">
@@ -59,6 +59,15 @@ Play, pause, skip and scrub through the track; click the app name to jump to the
 Keep the texts you paste all the time — your email, phone number, links — one click away.
 What you copy most often appears here on its own, and you can pin it as a snippet.
 
+### Recent downloads
+
+![Recently downloaded files](docs/screenshots/en/downloads.png)
+
+- The files that landed in your Downloads folder, newest first, with their size and when they arrived.
+- Choose how far back the tab looks: today, three days, a week, a month or everything.
+- Click to open, hover to show a file in Finder or move it to the Trash, or drag it straight into another app.
+- A file that finishes downloading says so in the notch.
+
 ### Calendar
 
 ![Upcoming events](docs/screenshots/en/calendar.png)
@@ -73,15 +82,51 @@ What you copy most often appears here on its own, and you can pin it as a snippe
 ![Unread mail](docs/screenshots/en/mail.png)
 
 - Unread messages from Apple Mail, newest first.
-- Click one to read it in the panel; hover a row to open it in Mail or mark it as read.
+- Click one to read it in the panel, laid out as the sender wrote it, images included.
+  Pictures that travel inside the message show up right away; remote ones wait for **Show images**,
+  because they are often tracking pixels.
+- Opening a message marks it as read; one button puts it back.
+- Hover a row to open it in Mail or mark it as read without opening.
 - New mail pops out of the notch, and the Mail tab keeps a dot until you look.
+
+### Jira — a plugin
+
+![Jira issues in the panel](docs/screenshots/en/jira.png)
+
+Installed separately: **Settings → Plugins → Jira → Install**.
+
+- Your issues by JQL filter — as many filters as you like, switched with a click.
+- Status and priority show in the row; search matches the key and the summary.
+- Click an issue to read it in the panel: description and the latest comments.
+- On hover: open it in the browser, copy the issue key, or copy the link.
+- New issues in a filter are announced by the notch.
+- Works with Jira Cloud (email + API token) and with Server / Data Center (personal token).
+
+### 1Password — a plugin
+
+![A 1Password item in the panel](docs/screenshots/en/onepassword.png)
+
+Installed separately: **Settings → Plugins → 1Password → Install**.
+
+- The items you reach for most, through the official `op` tool you install yourself.
+  If it is missing, the plugin shows how to install it and offers to copy the command.
+- Nothing is fetched in the background: the list opens when you ask, and that is when
+  1Password asks for Touch ID.
+- Inside an item: username, password, one-time code and the rest. Concealed values stay
+  masked until you reveal them.
+- Copying marks the value as a secret — it never enters the clipboard history and is cleared on a timer.
+- **Autofill** types the username and password into the app in front.
 
 ### Notifications in the notch
 
 ![A meeting reminder in the notch](docs/screenshots/en/alert.png)
 
 The notch stretches into a small banner, plays a sound and gives the trackpad a gentle tap.
-Hover it while it is up and the right tab opens straight away. Sound and trackpad feedback are yours to configure.
+Hover it while it is up and the right tab opens straight away.
+
+**Settings → Notifications** holds the rules for all of them: how long a banner stays, the sound and
+trackpad feedback, and a single switch that turns alerts off. While a Focus is on they stay quiet by
+default — the tab still keeps its dot, so nothing is lost.
 
 ### On-device translator
 
@@ -103,8 +148,22 @@ Any tab can get its own shortcut.
 - Reorder tabs, hide the ones you don't need, and choose which panel elements to show.
 - Open the panel on hover or on click, with an optional delay.
 - Five interface languages, switched instantly.
-- Trackpad feedback and the alert sound can be changed or turned off.
+- Plugins are switched on and off one by one, together with their permissions.
+- Trackpad feedback, the alert sound and how long a banner stays are yours to set — or turn alerts off.
 - Open at login and automatic updates.
+
+## Plugins
+
+Plugins do not come with the app: you install the ones you need in **Settings → Plugins**.
+The full list — with the authors' own descriptions and links to their repositories — lives on a
+separate page: **[FastAction plugins](docs/plugins.md)**. Add yours there with a pull request.
+Both integrations — Jira and 1Password — are written on the open plugin API and run in a sandbox:
+a plugin gets no files, no network beyond the hosts it declared, and no access to other plugins
+until you allow it. Permissions are granted one by one and revoked any time in
+**Settings → Plugins**, and every call into the system shows up in the plugin's log.
+
+Your own plugin is a folder with `manifest.json` and a `plugin.js` written in JavaScript.
+How to write one, what it can reach and what it cannot: [docs/PLUGINS.md](docs/PLUGINS.md).
 
 ## Installation
 
