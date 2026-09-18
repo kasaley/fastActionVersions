@@ -59,6 +59,30 @@ Play, pause, skip and scrub through the track; click the app name to jump to the
 Keep the texts you paste all the time — your email, phone number, links — one click away.
 What you copy most often appears here on its own, and you can pin it as a snippet.
 
+### Calendar
+
+![Upcoming events](docs/screenshots/en/calendar.png)
+
+- Your next week of meetings, each in the colour of its calendar.
+- A meeting with a Zoom, Meet, Teams or Webex link gets a **Join** button.
+- Click an event to read the details in the panel, or open it in Calendar from the row.
+- A few minutes before a meeting the notch pops out with a reminder and a sound — you choose how early.
+
+### Mail
+
+![Unread mail](docs/screenshots/en/mail.png)
+
+- Unread messages from Apple Mail, newest first.
+- Click one to read it in the panel; hover a row to open it in Mail or mark it as read.
+- New mail pops out of the notch, and the Mail tab keeps a dot until you look.
+
+### Notifications in the notch
+
+![A meeting reminder in the notch](docs/screenshots/en/alert.png)
+
+The notch stretches into a small banner, plays a sound and gives the trackpad a gentle tap.
+Hover it while it is up and the right tab opens straight away. Sound and trackpad feedback are yours to configure.
+
 ### On-device translator
 
 ![Translator](docs/screenshots/en/translate.png)
@@ -79,6 +103,7 @@ Any tab can get its own shortcut.
 - Reorder tabs, hide the ones you don't need, and choose which panel elements to show.
 - Open the panel on hover or on click, with an optional delay.
 - Five interface languages, switched instantly.
+- Trackpad feedback and the alert sound can be changed or turned off.
 - Open at login and automatic updates.
 
 ## Installation
@@ -117,6 +142,10 @@ Automatic checks and installs can be changed in **Settings → General → Updat
 **Settings → General → Open panel**: it may be set to open on click. The panel doesn't open in Mission Control by design.
 
 **Music doesn't show up.** The player has to report to the macOS Now Playing service — the same one that powers the media keys.
+
+**Calendar or Mail asks for permission.** Calendar access is requested when you open the tab;
+Mail needs Automation access in **System Settings → Privacy & Security → Automation**.
+FastAction never launches Mail on its own.
 
 **The translator asks to download languages.** Click **Download**, or add them in
 **System Settings → General → Language & Region → Translation Languages**.
