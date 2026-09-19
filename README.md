@@ -139,6 +139,20 @@ Installed separately: **Settings → Plugins → 1Password → Install**.
 - Copying marks the value as a secret — it never enters the clipboard history and is cleared on a timer.
 - **Autofill** types the username and password into the app in front.
 
+### Confirmation codes
+
+When a code arrives by email it lands in the notch on its own: large, with a **Copy** button and a
+cross. Copying closes the banner. It stays up longer than an ordinary alert — ten seconds, and that
+is a setting.
+
+A number counts as a code only when a word like "code", "verification" or "OTP" stands next to it.
+Order numbers, phone numbers, sums, dates, years, postcodes and card numbers are not codes — the
+self-test covers 27 cases, half of which check that we do **not** fire.
+
+Codes from **iMessage and SMS** are found too, once that is switched on in **Settings →
+Notifications**. Reading the Messages database asks macOS for Full Disk Access; only new incoming
+messages are read, and only to look for a code — nothing is stored and nothing is shown in a tab.
+
 ### Notifications in the notch
 
 ![A meeting reminder in the notch](docs/screenshots/en/alert.png)
@@ -258,6 +272,8 @@ Automatic checks and installs can be changed in **Settings → General → Updat
 
 ## Privacy
 
+- Messages are read only while code detection is on: new incoming ones only, only to look for a
+  code, and never stored.
 - Your clipboard history, pinned items and screenshots stay on your Mac. There are no accounts and no analytics;
   the only network request is the daily update check to GitHub.
 - Text recognition and translation run on-device.
