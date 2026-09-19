@@ -311,3 +311,7 @@ Found a bug or have an idea? [Open an issue](https://github.com/kasaley/fastActi
 The plugin API and the catalogue are here already — [how to write one](docs/PLUGINS.md).
 Next: more ready-made integrations, settings that follow you between Macs, and notarization,
 so the first launch comes without a warning.
+
+---
+
+The shape of the panel is inspired by [Cyclop](https://github.com/akalikbergenov/cyclop).
